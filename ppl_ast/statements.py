@@ -1,4 +1,15 @@
 # PPL Statements
+from node import *
+
+
+class LocalStatement(AbstractStatement):
+    def __init__(self, name: str, value: AbstractExpression):
+        self.name = name
+        self.value = value
+
+    def print(self, pretty: bool, indents: str = ""):
+        return indents + "local " + self.name + (" := " if pretty else ":=") + self.value.print(pretty) + \
+               (";\n" if pretty else ";")
 
 
 class IfStatement:
@@ -10,10 +21,6 @@ class CaseStatement:
 
 
 class IfErrStatement:
-    pass
-
-
-class LocalStatement:
     pass
 
 
