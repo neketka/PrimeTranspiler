@@ -23,4 +23,5 @@ class PrimeProgram:
         self.definitions = definitions
 
     def print(self, pretty):
-        return ("\n" if pretty else "").join(map(lambda df: df.print(pretty), self.definitions))
+        return "#pragma mode(separator(.,;) integer(h64))" + ("\n\n" if pretty else " ") + \
+               ("\n" if pretty else "").join(map(lambda df: df.print(pretty), self.definitions))
