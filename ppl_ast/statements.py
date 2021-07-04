@@ -1,5 +1,5 @@
 # PPL Statements
-from node import *
+from ppl_ast.node import *
 
 
 class LocalStatement(AbstractStatement):

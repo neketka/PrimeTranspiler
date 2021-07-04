@@ -1,7 +1,7 @@
-from node import *
-from definitions import *
-from expressions import *
-from statements import *
+from ppl_ast.node import PrimeProgram
+from ppl_ast.definitions import *
+from ppl_ast.expressions import *
+from ppl_ast.statements import *
 
 
 def main():

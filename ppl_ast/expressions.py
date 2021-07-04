@@ -1,5 +1,5 @@
 # PPL Expressions
-from node import *
+from ppl_ast.node import *
 
 
 class NumberExpression(AbstractExpression):

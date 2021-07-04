@@ -1,5 +1,5 @@
 # PPL definitions
-from node import *
+from ppl_ast.node import *
 
 
 class FunctionDefinition(AbstractDefinition):
